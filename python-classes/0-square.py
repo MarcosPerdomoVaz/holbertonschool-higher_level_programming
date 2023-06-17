@@ -3,8 +3,11 @@
 """
 author: MarcosPerdomoVaz
 """
+
+
 class Square:
     """
     Defined an empty Square class.
     """
+
     pass
