@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""
-Line function
-"""
+""" Write a function that writes a string to a text file """
 
 
 def number_of_lines(filename=""):
-    """number of lines from file
+    """
+    must use the with
     """
     line_num = 0
     with open(filename, encoding="utf-8") as f:
