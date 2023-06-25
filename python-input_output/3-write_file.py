@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+write method
+"""
 
 
 def write_file(filename="", text=""):
-    with open(filename, "w", encoding="UTF-8") as f:
-        return f.write(text)
+    """write to file
+    """
+
+    with open(filename, mode="w", encoding="utf-8") as f:
+        if f.write(text):
+            return len(text)
