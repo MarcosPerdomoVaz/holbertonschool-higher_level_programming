@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for abc in range(0, 10):
-    for cba in range(abc + 1, 10):
-        if ((abc != 8 or cba != 9) and cba > abc):
-            print('{:01d}{:01d}'.format(abc, cba), end=', ')
-print('89')
+for tens in range(0, 10):
+    for ones in range(0, 10):
+        if ones > tens and (ones + tens) < 17:
+            print("{:d}{:d}".format(tens, ones), end=", ")
+print("89")
