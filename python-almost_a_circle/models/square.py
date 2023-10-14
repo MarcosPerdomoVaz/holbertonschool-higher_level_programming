@@ -50,13 +50,8 @@ class Square(Rectangle):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        list_atr = ['id', 'size', 'x', 'y']
-        dict_res = {}
-
-        for key in list_atr:
-            if key == 'size':
-                dict_res[key] = getattr(self, 'width')
-            else:
-                dict_res[key] = getattr(self, key)
-
-        return dict_res
+        """
+            returns the dictionary
+            representation of a square
+        """
+        return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
