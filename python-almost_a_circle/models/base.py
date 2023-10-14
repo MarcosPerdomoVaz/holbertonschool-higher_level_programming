@@ -41,12 +41,12 @@ class Base:
         else:
             return json.loads(json_string)
 
-     @classmethod
+    @classmethod
     def create(cls, **dictionary):
-        '''prints instances'''
-        if cls.__name__ == 'Rectangle':
-            dummy = cls(1, 1)
-        elif cls.__name__ == 'Square':
-            dummy = cls(1)
-        dummy.update(**dictionary)
-        return dummy
+        """ Create an instance """
+        if cls.__name__ == "Rectangle":
+            new = cls(10, 10)
+        else:
+            new = cls(10)
+        new.update(**dictionary)
+        return new
